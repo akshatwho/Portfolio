@@ -23,7 +23,7 @@ export default function About() {
         <p className="mb-3">
         I am a{" "}
         <span className="font-medium">mobile engineer</span> who works
-        comfortably across the stack — from native{" "}
+        comfortably across the stack, from native{" "}
         <span className="font-medium">iOS (Swift, Objective-C) and Android (Kotlin)</span>{" "}
         to <span className="font-medium">React Native</span>, and back down into{" "}
         <span className="font-medium">Java Spring and Angular</span> on the backend and web
