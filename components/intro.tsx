@@ -58,9 +58,9 @@ export default function Intro() {
         <span className="font-bold">Hello, I am Akshat.</span> I am a{" "}
         <span className="font-bold">software engineer</span> shipping{" "}
         <span className="font-bold">native iOS, Android & full-stack</span> products,
-        currently building <span className="italic">betting flows at FanDuel</span> and
-        previously leading mobile development on a platform serving{" "}
-        <span className="underline">9M+ annual logins</span>.
+        currently building <span className="italic">consumer product flows at America&apos;s #1 sportsbook, FanDuel</span> and
+        previously leading mobile development on{" "}
+        <span className="font-bold">EquatePlus, the leading ESPP platform globally</span>.
       </motion.h1>
 
       <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium'

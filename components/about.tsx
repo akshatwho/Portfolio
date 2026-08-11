@@ -27,12 +27,12 @@ export default function About() {
         <span className="font-medium">iOS (Swift, Objective-C) and Android (Kotlin)</span>{" "}
         to <span className="font-medium">React Native</span>, and back down into{" "}
         <span className="font-medium">Java Spring and Angular</span> on the backend and web
-        side. I currently ship betting products at{" "}
+        side. I currently ship consumer products at America&apos;s #1 sportsbook,{" "}
         <span className="font-medium">FanDuel</span>, and previously led mobile
-        development on a share-plan platform serving{" "}
-        <span className="font-medium">9M+ annual logins</span> at Computershare.{" "}
+        development at Computershare on{" "}
+        <span className="font-medium">EquatePlus, the leading ESPP platform globally</span>.{" "}
         <span className="italic">My favorite part of engineering</span> is the
-        problem-solving aspect. I <span className="underline">love</span> pulling
+        problem-solving aspect. I <span className="font-medium">love</span> pulling
         apart a gnarly bug or a native platform quirk until it clicks.
       </p>
 

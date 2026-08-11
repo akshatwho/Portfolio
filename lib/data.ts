@@ -39,7 +39,7 @@ export const experiencesData = [
     title: "Software Engineer",
     location: "Edinburgh, UK",
     description:
-      "Shipping React Native features across iOS and Android for FanDuel, the #1 sportsbook in the US — from native modules through to TypeScript/React components. Built critical betting flows, patched VoiceOver/TalkBack accessibility at the native layer, and integrated prediction markets into the core app.",
+      "Shipping React Native features across iOS and Android for FanDuel, America's #1 sportsbook — from native modules through to TypeScript/React components. Built critical real-time transaction flows, patched VoiceOver/TalkBack accessibility at the native layer, and integrated prediction markets into the core app.",
     icon: React.createElement(CgWorkAlt),
     date: "March 2026 - Present",
   },
@@ -47,7 +47,7 @@ export const experiencesData = [
     title: "Full Stack Developer",
     location: "Edinburgh, UK",
     description:
-      "Led mobile development for one of the world's largest Employee Share Plan platforms (9M+ annual logins) at Computershare, building Angular/Ionic UI and native Capacitor plugins in Swift and Java, alongside RESTful APIs in Java Spring and Oracle SQL.",
+      "Led mobile development at Computershare on EquatePlus, the leading ESPP platform globally (9M+ annual logins), building Angular/Ionic UI and native Capacitor plugins in Swift and Java, alongside RESTful APIs in Java Spring and Oracle SQL.",
     icon: React.createElement(FaBriefcase),
     date: "Sept 2022 - Mar 2026",
   },
