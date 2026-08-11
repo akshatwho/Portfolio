@@ -22,7 +22,7 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">
         I am a{" "}
-        <span className="font-medium">software engineer</span> who works
+        <span className="font-medium">mobile engineer</span> who works
         comfortably across the stack — from native{" "}
         <span className="font-medium">iOS (Swift, Objective-C) and Android (Kotlin)</span>{" "}
         to <span className="font-medium">React Native</span>, and back down into{" "}
