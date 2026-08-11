@@ -32,7 +32,7 @@ export default function Contact() {
         <SectionHeading>Contact Me</SectionHeading>
         <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:akshatsrivastav7@gmail.com@gmail.com">
+        <a className="underline" href="mailto:akshatsrivastav7@gmail.com">
           akshatsrivastav7@gmail.com
         </a>{" "}
         or through this form.
@@ -53,12 +53,12 @@ export default function Contact() {
         <input
           required 
           maxLength={500}
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-hidden"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           type='email'
           placeholder='email'
           name='senderEmail' />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-hidden"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white/80 dark:focus:bg-white transition-all dark:outline-hidden"
           placeholder='Your message'
           required
           name='message'
