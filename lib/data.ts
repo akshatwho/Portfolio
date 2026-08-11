@@ -2,8 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaBriefcase } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
-import rmtdevImg from "@/public/rmtdevImg.png";
-import tongyouImg from "@/public/tongyou-placeholder.svg";
 
 export const links = [
   {
@@ -54,17 +52,10 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Tongyou",
+    status: "In production",
     description:
       "A production React Native app migrated from a legacy Vue.js codebase, with real-time WebSocket messaging, native Swift UI work (iOS 26 Liquid Glass tab bar), Stripe in-app payments, and a Redis-backed session system.",
     tags: ["React Native", "SwiftUI", "WebSockets", "Redux", "Redis", "Spring Boot"],
-    imageUrl: tongyouImg,
-  },
-  {
-    title: "Earth Defenders Game",
-    description:
-      "Inspired from Space Invaders, this game gives players intriguing enemy levels along with arcade vibes.",
-    tags: ["Unity", "C#", "AI state machine", "Performance and Memory Use", "3D Math"],
-    imageUrl: rmtdevImg,
   },
 ] as const;
 

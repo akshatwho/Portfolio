@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Akshat | Personal Portfolio',
-  description: 'Akshat is a software engineer working across native iOS, Android, React Native, and full-stack web',
+  description: 'Akshat is a mobile engineer working across native iOS, Android, React Native, and full-stack web',
 }
 
 export default function RootLayout({

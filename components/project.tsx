@@ -2,16 +2,16 @@
 
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & { gifUrl?: string };
 
 export default function Project({
   title,
+  status,
   description,
   tags,
-  imageUrl,
+  gifUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -28,44 +28,47 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="mx-auto grid max-w-2xl items-center gap-10 sm:grid-cols-[13rem_1fr]"
     >
-      <section className="bg-gray-100 max-w-2xl border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-80 hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-72">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/70 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+      <div className="relative mx-auto h-104 w-52 rounded-[2.2rem] border border-black/10 bg-gray-950 p-2 shadow-2xl dark:border-white/10">
+        <div className="absolute top-3 left-1/2 z-10 h-1.5 w-12 -translate-x-1/2 rounded-full bg-white/20" />
+        <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[1.7rem] bg-gradient-to-br from-violet-600/40 via-gray-900 to-gray-950">
+          {gifUrl ? (
+            // next/image would re-encode and break the GIF's animation
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={gifUrl}
+              alt={`${title} app walkthrough`}
+              className="h-full w-full object-cover"
+            />
+          ) : (
+            <p className="px-4 text-center text-[0.65rem] tracking-wider text-white/40 uppercase">
+              Walkthrough GIF coming soon
+            </p>
+          )}
         </div>
+      </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-113 rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-hover:group-even:translate-x-3
-        group-hover:group-even:translate-y-3
-        group-hover:group-even:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        />
-      </section>
+      <div className="text-center sm:text-left">
+        <span className="inline-flex items-center gap-2 rounded-full border border-black/10 px-3 py-1 text-[0.65rem] tracking-wider text-violet-600 uppercase dark:border-white/10 dark:text-violet-400">
+          <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
+          {status}
+        </span>
+        <h3 className="mt-3 text-2xl font-semibold">{title}</h3>
+        <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
+          {description}
+        </p>
+        <ul className="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
+          {tags.map((tag, index) => (
+            <li
+              className="rounded-full bg-black/70 px-3 py-1 text-[0.7rem] tracking-wider text-white uppercase dark:text-white/70"
+              key={index}
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
+      </div>
     </motion.div>
   );
 }
