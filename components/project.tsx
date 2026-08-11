@@ -8,7 +8,6 @@ type ProjectProps = (typeof projectsData)[number] & { gifUrl?: string };
 
 export default function Project({
   title,
-  status,
   description,
   tags,
   gifUrl,
@@ -28,9 +27,9 @@ export default function Project({
         scale: scaleProgess,
         opacity: opacityProgess,
       }}
-      className="mx-auto grid max-w-2xl items-center gap-10 sm:grid-cols-[13rem_1fr]"
+      className="mx-auto grid max-w-2xl items-center gap-10 sm:max-w-3xl sm:grid-cols-[18rem_1fr]"
     >
-      <div className="relative mx-auto h-104 w-52 rounded-[2.2rem] border border-black/10 bg-gray-950 p-2 shadow-2xl dark:border-white/10">
+      <div className="relative mx-auto aspect-[1206/2622] w-52 rounded-[2.2rem] border border-black/10 bg-gray-950 p-2 shadow-2xl dark:border-white/10 sm:w-72">
         <div className="absolute top-3 left-1/2 z-10 h-1.5 w-12 -translate-x-1/2 rounded-full bg-white/20" />
         <div className="flex h-full w-full items-center justify-center overflow-hidden rounded-[1.7rem] bg-gradient-to-br from-violet-600/40 via-gray-900 to-gray-950">
           {gifUrl ? (
@@ -50,11 +49,7 @@ export default function Project({
       </div>
 
       <div className="text-center sm:text-left">
-        <span className="inline-flex items-center gap-2 rounded-full border border-black/10 px-3 py-1 text-[0.65rem] tracking-wider text-violet-600 uppercase dark:border-white/10 dark:text-violet-400">
-          <span className="h-1.5 w-1.5 rounded-full bg-violet-500" />
-          {status}
-        </span>
-        <h3 className="mt-3 text-2xl font-semibold">{title}</h3>
+        <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
           {description}
         </p>

@@ -52,7 +52,6 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Tongyou",
-    status: "In production",
     description:
       "A location-based social platform facilitating real-time event discovery and peer-to-peer travel coordination for local communities, built around traveling together. A production React Native app migrated from a legacy Vue.js codebase, with real-time WebSocket messaging, native Swift UI work (iOS 26 Liquid Glass tab bar), Stripe in-app payments, and Redis-backed sessions and caching. Also help shape the backend across the entire system, integrating with a Java Spring Boot service on MariaDB hosted on AWS EC2, using the Google Maps API for geolocation, and defining the API contracts and scalable architecture the app relies on.",
     tags: ["React Native", "SwiftUI", "WebSockets", "Redux", "Redis", "Spring Boot", "MariaDB", "AWS EC2", "Google Maps API"],
