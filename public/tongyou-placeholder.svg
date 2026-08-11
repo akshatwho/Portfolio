@@ -1,0 +1,35 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b2f63" />
+      <stop offset="100%" stop-color="#1c1730" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#bg)" />
+
+  <!-- phone frame -->
+  <rect x="300" y="90" width="200" height="420" rx="32" fill="#0f0c1c" stroke="#ffffff22" stroke-width="4" />
+  <rect x="316" y="120" width="168" height="360" rx="14" fill="#26203f" />
+
+  <!-- chat bubbles -->
+  <rect x="332" y="150" width="110" height="34" rx="17" fill="#6d5bd0" />
+  <rect x="358" y="196" width="110" height="34" rx="17" fill="#4a4570" />
+  <rect x="332" y="242" width="130" height="34" rx="17" fill="#6d5bd0" />
+
+  <!-- swipeable photo card -->
+  <rect x="332" y="300" width="136" height="90" rx="12" fill="#39325a" />
+  <circle cx="450" cy="320" r="8" fill="#ffffff55" />
+
+  <!-- tab bar -->
+  <rect x="316" y="440" width="168" height="40" rx="20" fill="#0f0c1c" />
+  <circle cx="350" cy="460" r="6" fill="#ffffff88" />
+  <circle cx="400" cy="460" r="6" fill="#ffffffcc" />
+  <circle cx="450" cy="460" r="6" fill="#ffffff88" />
+
+  <text x="400" y="555" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="700" fill="#ffffff">
+    Tongyou
+  </text>
+  <text x="400" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#ffffff99">
+    Placeholder graphic — swap for a real screenshot
+  </text>
+</svg>
