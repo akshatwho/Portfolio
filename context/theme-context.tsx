@@ -35,7 +35,11 @@ export default function ThemeContextProvider({
   useEffect(() => {
     const localTheme = window.localStorage.getItem("theme") as Theme | null;
 
+    // Reading theme from localStorage/matchMedia requires the browser APIs
+    // that are only available client-side, so this can't move into the
+    // useState initializer (which also runs during SSR).
     if (localTheme) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setTheme(localTheme);
 
       if (localTheme === "dark") {

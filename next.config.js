@@ -6,10 +6,8 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'images.unsplash.com',
             },
-        ]
-    },
-    experimental: {
-        serverActions: true
+        ],
+        qualities: [75, 95],
     }
 }
 
