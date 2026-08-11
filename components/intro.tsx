@@ -58,7 +58,9 @@ export default function Intro() {
         <span className="font-bold">Hello, I am Akshat.</span> I am a{" "}
         <span className="font-bold">software engineer</span> shipping{" "}
         <span className="font-bold">native iOS, Android & full-stack</span> products,
-        currently building <span className="italic">consumer product flows at America&apos;s #1 sportsbook, FanDuel</span> and
+        currently building{" "}
+        <span className="italic">consumer product flows at America&apos;s #1 sportsbook,</span>{" "}
+        <span className="font-bold">FanDuel</span>, and
         previously leading mobile development on{" "}
         <span className="font-bold">EquatePlus, the leading ESPP platform globally</span>.
       </motion.h1>
