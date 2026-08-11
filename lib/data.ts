@@ -2,9 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaBriefcase } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
-import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdevImg.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import tongyouImg from "@/public/tongyou-placeholder.svg";
 
 export const links = [
@@ -62,24 +60,11 @@ export const projectsData = [
     imageUrl: tongyouImg,
   },
   {
-    title: "PathMaker (Dissertation Project)",
-    description: "Guides users to discover historical sites and go on witch hunts in foreign countries they are travelling to, connecting with like minded people through it.",
-    tags: ["React Native", "Google Maps APIs", "Tailwind", "Firebase", "Expo"],
-    imageUrl: corpcommentImg,
-  },
-  {
     title: "Earth Defenders Game",
     description:
       "Inspired from Space Invaders, this game gives players intriguing enemy levels along with arcade vibes.",
     tags: ["Unity", "C#", "AI state machine", "Performance and Memory Use", "3D Math"],
     imageUrl: rmtdevImg,
-  },
-  {
-    title: "Labyrinth",
-    description:
-      "2D game developed as a group project based on the classic board game Labyrinth.",
-    tags: ["Java", "JavaFX", "Pair Programming", "Game Design", "Concurrency"],
-    imageUrl: wordanalyticsImg,
   },
 ] as const;
 
